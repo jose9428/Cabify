@@ -1,0 +1,130 @@
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.csproj.AssemblyReference.cache
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfo.cs
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\WebAPI.exe
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\WebAPI.deps.json
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\WebAPI.runtimeconfig.json
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\WebAPI.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\WebAPI.pdb
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\scopedcss\bundle\WebAPI.styles.css
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CopyComplete
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\refint\WebAPI.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.pdb
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Computer\Desktop\SOA\Cabify\WebAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\appsettings.json
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\WebAPI.exe
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\WebAPI.deps.json
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\WebAPI.runtimeconfig.json
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\WebAPI.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\WebAPI.pdb
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Humanizer.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.csproj.AssemblyReference.cache
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfoInputs.cache
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfo.cs
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CoreCompileInputs.cache
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\scopedcss\bundle\WebAPI.styles.css
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CopyComplete
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\refint\WebAPI.dll
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.pdb
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
+D:\Nueva carpeta (2)\Trabajos\SOA\Cabify\Cabify\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll

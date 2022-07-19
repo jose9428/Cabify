@@ -1,0 +1,80 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Login";
+}
+<div id="app">
+    <div class="container" >
+        <div class="row">
+			<div class="col-md-5 mx-auto">
+			   <div class="card">
+                    <div class="card-body">
+                        <div id="first">
+				            <div class="myform form ">
+					             <div class="logo mb-3">
+						             <div class="col-md-12 text-center">
+							            <img src="~/img/icono.png" style="width:260px;height:139px;"/>
+						             </div>
+					            </div>
+                               <form action="" method="post" name="login">
+                                       <div class="form-group">
+                                          <label>Correo</label>
+                                          <input type="email" name="email"  class="form-control" v-model="correo">
+                                       </div>
+                                       <div class="form-group">
+                                          <label >Contraseña</label>
+                                          <input type="password"  class="form-control"  v-model="password">
+                                       </div>
+                      
+                                      <div class="d-grid gap-2 mt-3">
+                                          <button v-on:click="IniciarSesion()" type="button" class="btn btn-lg btn-block btn-sm" style="background:#7350FF; color:white;">Iniciar Sesión</button>
+                                       </div>
+
+                                       <div class="form-group">
+                                          <p class="text-center">¿No tienes una cuenta? <a asp-area="" asp-page="/Registro" id="signup">Registrate Aqui</a></p>
+                                       </div>
+                             </form>
+			                 </div>
+                       </div>
+                    </div>
+               </div>
+           </div>
+        </div>
+ </div>   
+ 
+</div>
+ 
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            urlBase: 'https://localhost:7182/api/Usuario',
+            correo: '1624643@utp.edu.pe',
+            password: '123456',
+        }, mounted: function () {
+             localStorage.removeItem('usuario');
+        },
+        methods: {
+             IniciarSesion: function () {
+                var url = this.urlBase + "/login";
+
+                var _param = {
+                    'correo': this.correo,
+                    'contrasennia':this.password
+                }
+                this.$http.post(url,_param).then(function (response) {
+                    var data = response.body;
+                    if(data!= null){
+                        alertify.success('Sesión iniciada!!');
+                        localStorage.setItem('usuario', JSON.stringify(data));
+                        location.href = "/Perfil";
+                    }else{
+                        alertify.error('Usuario y/o clave incorrecto.');
+                    }
+                }).catch(error => {
+                     alertify.error('Usuario y/o clave incorrecto.');
+                });
+            }
+        }
+    });
+</script>

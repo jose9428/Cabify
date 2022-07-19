@@ -1,0 +1,85 @@
+﻿@page
+@model WebUI.Pages.AsociarTarjetaModel
+@{
+}
+<div id="app">
+     <div class="container">
+            <div class="row">
+			    <div class="col-md-5 mx-auto">
+			       <div class="card">
+                        <div class="card-body">
+                            <div id="first">
+				                <div class="myform form ">
+					                 <div class="logo mb-3">
+						                 <div class="col-md-12 text-center">
+                                             <h4>Asociar Tarjeta</h4>
+                                             <hr />
+							             </div>
+					                </div>
+                                   <form action="" method="post" >
+                                        <div class="form-group">
+                                              <label>Numero Tarjeta</label>
+                                              <input type="text"   class="form-control"  maxlength="20" v-model="tarjeta.numeroTarjeta">
+                                           </div>
+                                           <div class="form-group">
+                                              <label >Fecha Caducidad</label>
+                                              <input type="date" class="form-control" v-model="tarjeta.fechaCaducidad">
+                                           </div>
+
+                                           <div class="form-group">
+                                              <label>CVV</label>
+                                              <input type="text"  class="form-control" v-model="tarjeta.cvv" maxlength="3" />
+                                           </div>
+                      
+                                          <div class="d-grid gap-2 mt-3">
+                                              <button v-on:click="Asociar()" type="button" class="btn btn-lg btn-block btn-sm" style="background:#7350FF; color:white;">Asociar</button>
+                                           </div>
+                                     </form>
+			                     </div>
+                           </div>
+                        </div>
+                   </div>
+               </div>
+            </div>
+     </div>   
+ </div>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            urlBase: 'https://localhost:7182/api/Tarjeta',
+            usuario:{},
+            tarjeta:{}
+        }, mounted: function () {
+            this.Nuevo();
+            this.usuario = JSON.parse(localStorage.getItem('usuario'));
+        },
+        methods: {
+             Asociar: function () {
+                var url = this.urlBase + "/asociar";
+                this.tarjeta.idUsuario = this.usuario.idUsuario;
+
+                this.$http.post(url,this.tarjeta).then(function (response) {
+                    var data = response.body;
+                    if(data.estatus == 200){
+                        this.Nuevo();
+                        alertify.success('Cuenta asociada de forma correcta.');
+                    }else{
+                        alertify.error(data.msj);
+                    }
+                }).catch(error => {
+                     alertify.error('Error al procesar datos');
+                });
+            },
+             Nuevo: function () {
+                this.tarjeta = {
+                    idTarjeta:0,
+                    idUsuario: 0,
+                    numeroTarjeta: "",
+                    fechaCaducidad: "",
+                    cvv: 0
+                }
+            }
+        }
+    });
+</script>

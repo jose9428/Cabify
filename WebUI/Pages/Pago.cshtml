@@ -1,0 +1,282 @@
+﻿@page
+@model WebUI.Pages.PagoModel
+@{
+}
+
+<div id="app">
+     <div class="container">
+            <div class="row">
+			    <div class="col-md-6 mx-auto">
+			       <div class="card">
+                        <div class="card-body">
+                            <div id="first"  v-if="nroProceso == 1" >
+				                <div class="myform form ">
+					                 <div class="logo mb-3">
+						                 <div class="col-md-12 text-center">
+                                             <h4>¿Como Quieres Pagar?</h4>
+                                             <hr />
+							             </div>
+                                         <p>Añade una forma de pago</p>
+
+                                         <div class="list-group">
+                                          <a v-for="(item, index) in tiposPagos" :class="index >0?' disabled':''" v-on:click="ContinuarProceso(2,item)"  href="#" class="list-group-item list-group-item-action"><i class="fas fa-credit-card"></i> {{item.nomTipo}} <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+					                </div>
+                                   
+			                     </div>
+                           </div>
+
+                           <div id="first"  v-if="nroProceso == 2" >
+				                <div class="myform form ">
+					                 <div class="logo mb-3">
+                                         <a href="#" v-on:click="ContinuarProceso(1,null)"><i class="fas fa-arrow-left"></i> Volver atras</a>
+						                 <div class="col-md-12 text-center">
+                                             <h4>Vehiculos cercanos disponibles</h4>
+                                             <hr />
+							             </div>
+                                     
+                                         <ul class="list-group list-group-numbered">
+                                              <li v-for="(item, index) in  vehiculos" class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                    <!--
+                                                          <img  src="~/img/taxi1.jpg"  style="width:60px;height:40px;"/>
+                                                     
+                                                    -->
+                                                    <img v-bind:src="'./img/' + item.imagen"   style="width:60px;height:40px;"/>
+                                                  <div class="fw-bold">Distancia : {{item.distancia}} (mtrs)</div>
+                                              
+                                                </div>
+                                                <button v-on:click="ConfirmarProceso(3,item)"  class="btn btn-sm"  style="background:#7350FF; color:white;">Seleccionar</button>
+                                              </li>
+                                         </ul>
+					                </div>
+                                   
+			                     </div>
+                           </div>
+
+                            <div id="first"  v-if="nroProceso == 3" >
+				                <div class="myform form ">
+					                 <div class="logo mb-3">
+                                         <a href="#" v-on:click="ContinuarProceso(2,tipoPag)"><i class="fas fa-arrow-left"></i> Volver atras</a>
+						                 <div class="col-md-12 text-center">
+                                             <h4>Confirmación Viaje / Pago</h4>
+                                             <hr />
+							             </div>
+                                           
+                                       <div class="list-group">
+                                          <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                            <img v-bind:src="'./img/' + vehiculo.imagen"   style="width:100px;height:80px;"/>
+                                            <div class="d-flex w-100 justify-content-between">
+                                              <h5 class="mb-1">Chofer: {{vehiculo.chofer}}</h5>
+                                            </div>
+                                             <p class="mb-1"><strong>Distancia:</strong> {{vehiculo.distancia}} mtrs</p>
+                                             <p class="mb-1"><strong>Placa:</strong> {{vehiculo.placa}} </p>
+                                        
+                                          </a>
+                                       </div>
+
+                                          <div class="form-group">
+                                              <label >KM Ubicación:</label>
+                                              <input type="number" class="form-control" v-model="km" v-on:change="CalcularPago()" >
+                                          </div>
+
+                                          <div class="form-group">
+                                              <label >Pago:</label>
+                                              <input type="number" class="form-control" readonly  v-model="pago.monto" />
+                                          </div>
+
+                                         <div class="form-group">
+                                            <label >Descripción:</label>
+                                            <textarea class="form-control" rows="3"  v-model="pago.descripcion"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label >Nro Cuenta:</label>
+                                            <input type="text" class="form-control" v-model="pago.numeroTarjeta" />
+                                        </div>
+					                </div>
+
+                                    <button v-on:click="ProcesarPago()"  class="btn btn-sm"  style="background:#7350FF; color:white;">PAGAR</button>
+			                        
+                                    <button v-if="idPago!=0" v-on:click="VerDetalle()" type="button" class="btn btn-success btn-sm text-rigth" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                      Ver Comprobante
+                                    </button>
+                                </div>
+                           </div>
+
+                          
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Comprobante</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                       <img src="~/img/cabify5011.jpg" style="width:110px; height:40px;" />
+
+                                       <p>CABIFY IT S.A.C. RUC:20547872518</p>
+                                       <h4>Resumen Costo Trayecto</h4>
+
+                                       <table v-if="pagoDet" class="table table-bordered">
+                                            <tr>
+                                               <td>Chofer:</td>
+                                               <td v-for="item in pagoDet.detallePagos">{{item.nomChofer}}</td>
+                                           </tr>
+                                            <tr>
+                                               <td>Placa:</td>
+                                               <td v-for="item in pagoDet.detallePagos">{{item.placa}}</td>
+                                           </tr>
+                                            <tr>
+                                               <td>Nro Pago:</td>
+                                               <td>{{pagoDet.idPago}}</td>
+                                           </tr>
+                                            <tr>
+                                               <td>Nro Tarjeta:</td>
+                                               <td v-for="item in pagoDet.detallePagos">{{item.numeroTarjeta}}</td>
+                                           </tr>
+                                           <tr>
+                                               <td>Descripción:</td>
+                                               <td>{{pagoDet.descripcion}}</td>
+                                           </tr>
+                                            <tr>
+                                               <td>Costo (S/.):</td>
+                                               <td>{{pagoDet.monto}}</td>
+                                           </tr>
+                                       </table>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm" data-bs-dismiss="modal"  style="background:#7350FF; color:white;">Cerrar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+            </div>
+     </div>   
+ </div>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            urlBase: 'https://localhost:7182/api/TipoPago',
+            urlBasePg: 'https://localhost:7182/api/Pago',
+            tiposPagos:[],
+            tipoPag: {},
+            vehiculos:[],
+            vehiculo:{},
+            nroProceso: 1,
+            pago:{},
+            usuario:{},
+            km:1,
+            idPago: 0,
+            pagoDet:{}
+        }, mounted: function () {
+            this.listarMetodosPagos();
+            this.CrearVehiculos();
+            this.NuevoPago();
+            this.usuario = JSON.parse(localStorage.getItem('usuario'));
+        },
+        methods: {
+             listarMetodosPagos: function () {
+                var url = this.urlBase + "/todos";
+
+                this.$http.get(url,this.usuario).then(function (response) {
+                    this.tiposPagos = response.body;
+                    
+                }).catch(error => {
+                      alertify.error('Error al procesar datos');
+                });
+            },ContinuarProceso: function (operacion , item){
+                this.nroProceso = operacion;
+                this.tipoPag = item;
+            },ConfirmarProceso: function (operacion , item){
+                this.nroProceso = operacion;
+                this.vehiculo = item;
+                this.idPago = 0;
+                this.CalcularPago();
+            },CrearVehiculos: function(){
+                this.vehiculos = [
+                    {'imagen': 'taxi1.jpg' , 'costoKM': 5 , 'distancia':this.GenDist() , "chofer": "Mauricio Cardenas Salazar", "placa": "ASX-123" },
+                    {'imagen': 'taxi2.jpg' , 'costoKM': 6 , 'distancia':this.GenDist() , "chofer": "Luciano Fernandez Contreras", "placa": "AMZ-101"},
+                    {'imagen': 'taxi3.jpg' , 'costoKM': 4 , 'distancia':this.GenDist() , "chofer": "Jorge Calderon Quispe", "placa": "PWZ-012"}
+                ];
+            }, GenDist: function(){
+                return Math.floor(Math.random() * 2000 + 1);
+            }, ProcesarPago: function (){
+                 var url = this.urlBasePg + "/realizar";
+
+                 this.pago.idUsuario = this.usuario.idUsuario;
+                 this.pago.idTipoPago = this.tipoPag.idTipoPago; 
+                 this.pago.detalle.nomChofer = this.vehiculo.chofer;
+                 this.pago.detalle.placa = this.vehiculo.placa;
+              
+                 this.$http.post(url,this.pago).then(function (response) {
+                     var data = response.body;
+
+                     if(data.estatus == 200){
+                         alertify.success('La reserva se realizó de forma correcta');
+                         this.idPago = data.data.idPago;
+                         this.NuevoPago();
+                         this.CalcularPago();
+                         this.EnviarCorreo();
+                     }else{
+                         alertify.error(data.msj);
+                     }
+                    
+                }).catch(error => {
+                     console.dir(error);
+                      alertify.error('Error al procesar datos');
+                });
+
+            },NuevoPago: function(){
+                this.pago = {
+                    idPago: 0,
+                    monto:0,
+                    idTipoPago:0,
+                    descripcion:'',
+                    idUsuario:0,
+                    idTarjeta:0,
+                    numeroTarjeta:"",
+                    detalle: {
+                        nomChofer:"",
+                        placa:""
+                    },
+                    usuario:{}
+                };
+            }, CalcularPago: function(){
+                this.pago.monto = this.vehiculo.costoKM * this.km;
+            },EnviarCorreo: function(){
+
+                var url = this.urlBasePg + "/correo?idPago="+this.idPago;
+  
+                this.$http.get(url).then(function (response) {
+                    var data = response.body;
+                   
+                    if(data.estatus == 200){
+                        alertify.success('Correo enviado de forma correcta');
+                    }else{
+                        alertify.error(data.msj);
+                    }
+
+                }).catch(error => {
+                     alertify.error('Lo sentimos no se ha podido enviar comprobante por correo.');
+                });
+            },VerDetalle: function(){
+
+                var url = this.urlBasePg + "/detalle?idPago="+this.idPago;
+  
+                this.$http.get(url).then(function (response) {
+                    this.pagoDet = response.body.data;
+                }).catch(error => {
+                    console.dir(error);
+                    alertify.error('Lo sentimos no se ha podido cargar datos');
+                });
+            }
+        }
+    });
+</script>
